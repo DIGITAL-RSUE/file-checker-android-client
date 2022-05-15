@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="365dp"
+        android:background="@drawable/gradient_main"
+        android:gravity="center">
+
+        <ImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:srcCompat="@drawable/digital"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="65dp" />
+
+        <Button
+            android:padding="5dp"
+            android:textColor="#d7d7ef"
+            android:id="@+id/uploadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Нажмите для загрузки файла"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499"
+            android:layout_marginVertical="50dp"
+            android:background="@drawable/button"/>
+
+        <TextView
+            android:textColor="#d7d7ef"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="Поддержимаевые типы файлов: xls, xlm, xlsx, xlsm, doc, docx, docm, ppt, pps, pptx, ppsx, ppam, odt, odp, ods, pptm, pdf, rtf"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+
+            tools:layout_editor_absoluteY="425dp" />
+
+        <ProgressBar
+            android:layout_marginVertical="20dp"
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/progress_bg"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="142dp"
+            android:layout_height="114dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+
+            tools:layout_editor_absoluteY="504dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
